@@ -1,0 +1,299 @@
+###############################################################################
+#
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  29/Aug/2020  11:57:27
+# Copyright 2007-2019 IAR Systems AB.
+#
+#    Output file  =
+#        D:\Documents\Work Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6
+#        1.2\EWARM\PXL6 1.1 Configuration\Exe\PXL6 1.1 Configuration.out
+#    Map file     =
+#        D:\Documents\Work Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6
+#        1.2\EWARM\PXL6 1.1 Configuration\List\PXL6 1.1 Configuration.map
+#    Command line =
+#        -f C:\Users\misty\AppData\Local\Temp\EWAE44.tmp ("D:\Documents\Work
+#        Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1
+#        Configuration\Obj\main.o" "D:\Documents\Work Falconex\Work Old
+#        Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1
+#        Configuration\Obj\startup_stm32f030x6.o" "D:\Documents\Work
+#        Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1
+#        Configuration\Obj\stm32f0xx_hal.o" "D:\Documents\Work Falconex\Work
+#        Old Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1
+#        Configuration\Obj\stm32f0xx_hal_cortex.o" "D:\Documents\Work
+#        Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1
+#        Configuration\Obj\stm32f0xx_hal_dma.o" "D:\Documents\Work
+#        Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1
+#        Configuration\Obj\stm32f0xx_hal_flash.o" "D:\Documents\Work
+#        Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1
+#        Configuration\Obj\stm32f0xx_hal_flash_ex.o" "D:\Documents\Work
+#        Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1
+#        Configuration\Obj\stm32f0xx_hal_gpio.o" "D:\Documents\Work
+#        Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1
+#        Configuration\Obj\stm32f0xx_hal_msp.o" "D:\Documents\Work
+#        Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1
+#        Configuration\Obj\stm32f0xx_hal_pwr.o" "D:\Documents\Work
+#        Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1
+#        Configuration\Obj\stm32f0xx_hal_pwr_ex.o" "D:\Documents\Work
+#        Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1
+#        Configuration\Obj\stm32f0xx_hal_rcc.o" "D:\Documents\Work
+#        Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1
+#        Configuration\Obj\stm32f0xx_hal_rcc_ex.o" "D:\Documents\Work
+#        Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1
+#        Configuration\Obj\stm32f0xx_it.o" "D:\Documents\Work Falconex\Work Old
+#        Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1
+#        Configuration\Obj\system_stm32f0xx.o" --redirect _Printf=_PrintfFull
+#        --redirect _Scanf=_ScanfFull --no_out_extension -o "D:\Documents\Work
+#        Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1
+#        Configuration\Exe\PXL6 1.1 Configuration.out" --map "D:\Documents\Work
+#        Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1
+#        Configuration\List\PXL6 1.1 Configuration.map" --config
+#        "D:\Documents\Work Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6
+#        1.2\EWARM\stm32f030x6_flash.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x800'7fff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 512, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'0fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address   Size  Object
+  -------            ----         -------   ----  ------
+"A0":                                       0xb0
+  .intvec            ro code   0x800'0000   0xb0  startup_stm32f030x6.o [1]
+                             - 0x800'00b0   0xb0
+
+"P1":                                      0xb62
+  .text              ro code   0x800'00b0  0x614  stm32f0xx_hal_rcc.o [1]
+  .text              ro code   0x800'06c4    0xc  stm32f0xx_hal.o [1]
+  .text              ro code   0x800'06d0   0x24  stm32f0xx_hal.o [1]
+  .text              ro code   0x800'06f4   0x36  I32DivMod.o [3]
+  .text              ro code   0x800'072a    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'072c   0x9a  stm32f0xx_hal_cortex.o [1]
+  .text              ro code   0x800'07c6    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'07c8    0x2  IntDivZer.o [3]
+  .text              ro code   0x800'07ca    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'07cc  0x17c  stm32f0xx_hal_gpio.o [1]
+  .text              ro code   0x800'0948   0xf4  main.o [1]
+  .text              ro code   0x800'0a3c   0x20  stm32f0xx_hal.o [1]
+  .text              ro code   0x800'0a5c   0x28  stm32f0xx_hal_msp.o [1]
+  .text              ro code   0x800'0a84   0x60  system_stm32f0xx.o [1]
+  .text              ro code   0x800'0ae4   0x30  copy_init3.o [3]
+  .text              ro code   0x800'0b14   0x28  data_init.o [3]
+  .iar.init_table    const     0x800'0b3c   0x14  - Linker created -
+  .text              ro code   0x800'0b50   0x1e  cmain.o [3]
+  .text              ro code   0x800'0b6e    0x4  low_level_init.o [2]
+  .text              ro code   0x800'0b72    0x8  exit.o [2]
+  .text              ro code   0x800'0b7a    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0b7c    0xa  cexit.o [3]
+  .text              ro code   0x800'0b86    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0b88   0x14  exit.o [4]
+  Initializer bytes  const     0x800'0b9c   0x18  <for P2-1>
+  .text              ro code   0x800'0bb4   0x10  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0bc4   0x10  stm32f0xx_hal.o [1]
+  .text              ro code   0x800'0bd4    0xc  stm32f0xx_it.o [1]
+  .text              ro code   0x800'0be0    0xc  cstartup_M.o [3]
+  .text              ro code   0x800'0bec    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0bee    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0bf0    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0bf2    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0bf4    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0bf6    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0bf8    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0bfa    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0bfc    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0bfe    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0c00    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0c02    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0c04    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0c06    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0c08    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0c0a    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0c0c    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0c0e    0x2  startup_stm32f030x6.o [1]
+  .text              ro code   0x800'0c10    0x2  startup_stm32f030x6.o [1]
+  .rodata            const     0x800'0c12    0x0  copy_init3.o [3]
+                             - 0x800'0c12  0xb62
+
+"P2", part 1 of 2:                          0x18
+  P2-1                        0x2000'0000   0x18  <Init block>
+    .data            inited   0x2000'0000   0x14  system_stm32f0xx.o [1]
+    .bss             inited   0x2000'0014    0x4  stm32f0xx_hal.o [1]
+                            - 0x2000'0018   0x18
+
+"P2", part 2 of 2:                         0x400
+  CSTACK                      0x2000'0018  0x400  <Block>
+    CSTACK           uninit   0x2000'0018  0x400  <Block tail>
+                            - 0x2000'0418  0x400
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+   0x800'0c12   0x800'7fff  0x73ee
+  0x2000'0418  0x2000'0fff   0xbe8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Copy (__iar_copy_init3)
+    1 source range, total size 0x18:
+           0x800'0b9c  0x18
+    1 destination range, total size 0x18:
+          0x2000'0000  0x18
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+command line/config:
+    -------------------------------------------------
+    Total:
+
+D:\Documents\Work Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1 Configuration\Obj: [1]
+    main.o                      244
+    startup_stm32f030x6.o       240
+    stm32f0xx_hal.o              96        4        4
+    stm32f0xx_hal_cortex.o      154
+    stm32f0xx_hal_gpio.o        380
+    stm32f0xx_hal_msp.o          40
+    stm32f0xx_hal_rcc.o       1'556
+    stm32f0xx_it.o               12
+    system_stm32f0xx.o           96       20       20
+    -------------------------------------------------
+    Total:                    2'818       24       24
+
+dl6M_tlf.a: [2]
+    exit.o                        8
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                       12
+
+rt6M_tl.a: [3]
+    I32DivMod.o                  54
+    IntDivZer.o                   2
+    cexit.o                      10
+    cmain.o                      30
+    copy_init3.o                 48
+    cstartup_M.o                 12
+    data_init.o                  40
+    -------------------------------------------------
+    Total:                      196
+
+shb_l.a: [4]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Linker created                        20    1'024
+-----------------------------------------------------
+    Grand Total:              3'046       44    1'048
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'0b3c          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'0b50          --   Gb  - Linker created -
+?main                    0x800'0b51         Code  Gb  cmain.o [3]
+AHBPrescTable           0x2000'0000   0x10  Data  Gb  system_stm32f0xx.o [1]
+CSTACK$$Base            0x2000'0018          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0418          --   Gb  - Linker created -
+HAL_GPIO_Init            0x800'07cd  0x164  Code  Gb  stm32f0xx_hal_gpio.o [1]
+HAL_GetTick              0x800'06c5    0xc  Code  Wk  stm32f0xx_hal.o [1]
+HAL_IncTick              0x800'0bc5   0x10  Code  Wk  stm32f0xx_hal.o [1]
+HAL_Init                 0x800'0a3d   0x1a  Code  Gb  stm32f0xx_hal.o [1]
+HAL_InitTick             0x800'06d1   0x24  Code  Wk  stm32f0xx_hal.o [1]
+HAL_MspInit              0x800'0a5d   0x28  Code  Gb  stm32f0xx_hal_msp.o [1]
+HAL_NVIC_SetPriority     0x800'0767    0x8  Code  Gb  stm32f0xx_hal_cortex.o [1]
+HAL_RCC_ClockConfig      0x800'047d  0x198  Code  Gb  stm32f0xx_hal_rcc.o [1]
+HAL_RCC_GetHCLKFreq      0x800'0655   0x1c  Code  Gb  stm32f0xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                         0x800'0619   0x3a  Code  Gb  stm32f0xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq::aPLLMULFactorTable
+                         0x800'06a4   0x10  Data  Lc  stm32f0xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq::aPredivFactorTable
+                         0x800'06b4   0x10  Data  Lc  stm32f0xx_hal_rcc.o [1]
+HAL_RCC_OscConfig        0x800'00b1  0x3c8  Code  Gb  stm32f0xx_hal_rcc.o [1]
+HAL_SYSTICK_CLKSourceConfig
+                         0x800'0797   0x18  Code  Gb  stm32f0xx_hal_cortex.o [1]
+HAL_SYSTICK_Config       0x800'076f   0x28  Code  Gb  stm32f0xx_hal_cortex.o [1]
+HAL_SYSTICK_IRQHandler   0x800'07bd    0x8  Code  Gb  stm32f0xx_hal_cortex.o [1]
+NVIC_SetPriority         0x800'072d   0x3a  Code  Lc  stm32f0xx_hal_cortex.o [1]
+Region$$Table$$Base      0x800'0b3c          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'0b50          --   Gb  - Linker created -
+SysTick_Handler          0x800'0bd5    0xc  Code  Gb  stm32f0xx_it.o [1]
+SystemClock_Config       0x800'09ed   0x50  Code  Gb  main.o [1]
+SystemCoreClock         0x2000'0010    0x4  Data  Gb  system_stm32f0xx.o [1]
+SystemInit               0x800'0a85   0x48  Code  Gb  system_stm32f0xx.o [1]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x2000'0fff         Data  Gb  <internal module>
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x2000'0000         Data  Gb  <internal module>
+__aeabi_idiv0            0x800'07c9         Code  Gb  IntDivZer.o [3]
+__cmain                  0x800'0b51         Code  Gb  cmain.o [3]
+__exit                   0x800'0b89   0x14  Code  Gb  exit.o [4]
+__iar_copy_init3         0x800'0ae5   0x30  Code  Gb  copy_init3.o [3]
+__iar_data_init3         0x800'0b15   0x28  Code  Gb  data_init.o [3]
+__iar_program_start      0x800'0be1         Code  Gb  cstartup_M.o [3]
+__iar_small_uidiv        0x800'06f5         Code  Gb  I32DivMod.o [3]
+__iar_small_uidivmod     0x800'06f5         Code  Gb  I32DivMod.o [3]
+__low_level_init         0x800'0b6f    0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000         Data  Gb  startup_stm32f030x6.o [1]
+_call_main               0x800'0b5d         Code  Gb  cmain.o [3]
+_exit                    0x800'0b7d         Code  Gb  cexit.o [3]
+_main                    0x800'0b6b         Code  Gb  cmain.o [3]
+aAPBAHBPrescTable        0x800'0694   0x10  Data  Gb  stm32f0xx_hal_rcc.o [1]
+exit                     0x800'0b73    0x8  Code  Gb  exit.o [2]
+main                     0x800'0949   0x94  Code  Gb  main.o [1]
+uwTick                  0x2000'0014    0x4  Data  Lc  stm32f0xx_hal.o [1]
+
+
+[1] = D:\Documents\Work Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1 Configuration\Obj
+[2] = dl6M_tlf.a
+[3] = rt6M_tl.a
+[4] = shb_l.a
+
+  3'046 bytes of readonly  code memory
+     44 bytes of readonly  data memory
+  1'048 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,34 @@
+stm32f0xx_hal_flash_ex.pbi: \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_flash_ex.c \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Inc\stm32f0xx_hal_conf.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Inc/mxconstants.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_rcc.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\STM32F0xx_HAL_Driver\Inc/stm32f0xx_hal_def.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\CMSIS\Device\ST\STM32F0xx\Include/stm32f030x6.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\CMSIS\Include\core_cm0.h \
+  D:\Program\ Files\ (x86)\iar\arm\inc\c\stdint.h \
+  D:\Program\ Files\ (x86)\iar\arm\inc\c\ycheck.h \
+  D:\Program\ Files\ (x86)\iar\arm\inc\c\yvals.h \
+  D:\Program\ Files\ (x86)\iar\arm\inc\c\DLib_Defaults.h \
+  D:\\Program\ Files\ (x86)\\iar\\arm\\inc\\c\\DLib_Config_Full.h \
+  D:\Program\ Files\ (x86)\iar\arm\inc\c\DLib_Product.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\CMSIS\Include\core_cmInstr.h \
+  D:\Program\ Files\ (x86)\iar\arm\inc\c\cmsis_iar.h \
+  D:\Program\ Files\ (x86)\iar\arm\inc\c/iccarm_builtin.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\CMSIS\Include\core_cmFunc.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\CMSIS\Device\ST\STM32F0xx\Include/system_stm32f0xx.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\STM32F0xx_HAL_Driver\Inc/Legacy/stm32_hal_legacy.h \
+  D:\Program\ Files\ (x86)\iar\arm\inc\c\stdio.h \
+  D:\Program\ Files\ (x86)\iar\arm\inc\c\ysizet.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\STM32F0xx_HAL_Driver\Inc/stm32f0xx_hal_rcc_ex.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_gpio.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\STM32F0xx_HAL_Driver\Inc/stm32f0xx_hal_gpio_ex.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_dma.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\STM32F0xx_HAL_Driver\Inc/stm32f0xx_hal_dma_ex.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_cortex.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_flash.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\STM32F0xx_HAL_Driver\Inc/stm32f0xx_hal_flash_ex.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_pwr.h \
+  D:\Documents\Work\ Falconex\Work\ Old\ Laptop\Tester\pxl6vcs2\PXL6\ 1.2\EWARM\..\Drivers\STM32F0xx_HAL_Driver\Inc/stm32f0xx_hal_pwr_ex.h

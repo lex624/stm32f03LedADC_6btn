@@ -1,0 +1,2 @@
+- LED display working fine
+- Have to find the good value for the comparaison (12V)

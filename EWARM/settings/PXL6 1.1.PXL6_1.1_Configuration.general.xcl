@@ -1,0 +1,15 @@
+"D:\Program Files (x86)\iar\arm\bin\armproc.dll" 
+
+"D:\Program Files (x86)\iar\arm\bin\armstlink2.dll" 
+
+"D:\Documents\Work Falconex\Work Old Laptop\Tester\pxl6vcs2\PXL6 1.2\EWARM\PXL6 1.1 Configuration\Exe\PXL6 1.1 Configuration.out" 
+
+--plugin="D:\Program Files (x86)\iar\arm\bin\armbat.dll" 
+
+--device_macro="D:\Program Files (x86)\iar\arm\config\debugger\ST\STM32F0xx.dmac" 
+
+--flash_loader="D:\Program Files (x86)\iar\arm\config\flashloader\ST\FlashSTM32F03xx6.board" 
+
+
+
+
