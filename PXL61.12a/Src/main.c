@@ -1,7 +1,7 @@
 /**
   ******************************************************************************
   * File Name          : main.c
-  * Description        : INTELLITEC / VCS FIRMWARE VERSION 1.12a FINAL VERSION
+  * Description        : 6btn keypap
   ******************************************************************************
   *
   * COPYRIGHT(c) 2015 STMicroelectronics
